@@ -75,7 +75,7 @@ function Tendou() {
           );
         } else {
           // Show an error message if authentication was not successful
-          window.show_error('Your password was incorrect');
+          window.show_error('Nome de usuário ou senha incorretos.');
 
           // Reset the password field and remove the wait indicator
           PrivateProp.el_input_pass.value = '';
