@@ -19,7 +19,8 @@ sudo mv win7-mint-webkit-greeter /usr/share/lightdm-webkit/themes/
 sudo chmod 777 -R /usr/share/lightdm-webkit/themes/win7-mint-webkit-greeter/
 
 lineTheme=$(grep "webkit-theme=" /etc/lightdm/lightdm-webkit-greeter.conf)
-sudo sed -i "s/$lineTheme/webkit-theme=win7-mint-webkit-greeter/g" /etc/lightdm/lightdm-webkit-greeter.conf
+sudo sed -i "s/$lineTheme/webkit-theme=win7-mint-webkit-greeter/g" \
+/etc/lightdm/lightdm-webkit-greeter.conf
 
 ```
 
