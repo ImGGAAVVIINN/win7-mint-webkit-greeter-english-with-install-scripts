@@ -4,7 +4,7 @@ This is a fork from project `Tendou for LightDM`. It is a greeter with style of 
 
 # How to install on Cinnnamon
 
-```
+```bash
 sudo apt update
 sudo apt install lightdm-webkit-greeter
 cat << EOF > /etc/lightdm/lightdm.conf.d/70-linuxmint.conf
