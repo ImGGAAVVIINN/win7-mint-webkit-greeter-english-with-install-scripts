@@ -11,9 +11,9 @@ greeter-session=lightdm-webkit-greeter
 EOF
 
 cd ../
-mv win7-mint-webkit-greeter /usr/share/lightdm-webkit/themes/
-chmod 777 -R /usr/share/lightdm-webkit/themes/win7-mint-webkit-greeter/
+mv win7-mint-webkit-greeter-english-with-install-scripts /usr/share/lightdm-webkit/themes/
+chmod 777 -R /usr/share/lightdm-webkit/themes/win7-mint-webkit-greeter-english-with-install-scripts/
 
 lineTheme=$(grep "webkit-theme=" /etc/lightdm/lightdm-webkit-greeter.conf)
-sed -i "s/$lineTheme/webkit-theme=win7-mint-webkit-greeter/g" \
+sed -i "s/$lineTheme/webkit-theme=win7-mint-webkit-greeter-english-with-install-scripts/g" \
 /etc/lightdm/lightdm-webkit-greeter.conf
